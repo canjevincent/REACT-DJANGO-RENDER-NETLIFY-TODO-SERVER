@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG","False").lower() == "true"
 
-ALLOWED_HOSTS = os.environ.get("ALLOWED_HOSTS").split(" ")
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -57,6 +57,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'django-react-aws-netlify-todo-dev-app.netlify.app',
+    'https://django-react-aws-netlify-todo-dev-app.netlify.app',
 ]
 
 REST_FRAMEWORK = {
