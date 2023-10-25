@@ -2,7 +2,7 @@
 backports.zoneinfo==0.2.1
 dj-database-url==2.1.0
 Django==3.2.22
-django-cors-headers==4.3.0
+django-cors-headers==4.1.0
 djangorestframework==3.14.0
 gunicorn==21.2.0
 mysqlclient==2.2.0
